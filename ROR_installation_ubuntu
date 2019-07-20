@@ -1,0 +1,41 @@
+Installing Ruby on Rails on Ubuntu:
+
+sudo apt-get update
+
+sudo apt install curl
+
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+\curl -L https://get.rvm.io | bash -s stable
+
+source ~/.rvm/scripts/rvm
+
+rvm requirements
+
+rvm install 2.6.3
+
+rvm use ruby --default
+
+rvm rubygems current
+
+gem install rails
+
+ 
+IMPORTANT --> TO RUN RUBY FROM ANY TERMINAL SESSION WE HAVE TO DO THE SETTINGS CHANGE=>
+	Terminal->(Top Menu)Edit->Preferences->Command->Run As LOgin Shell
+
+*******************
+We must install Nodejs for runtime Environmnt(else it will give runtime error)
+sudo apt install nodejs
+
+Initiating a Rails project:
+
+rails new proj
+
+cd proj
+
+bundle install
+
+rails server
+
+
